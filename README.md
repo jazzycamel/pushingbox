@@ -1,5 +1,5 @@
 # pushingbox
-A very simple Python client for the PushingBox Notification service API.
+A very simple Python client for the [PushingBox](https://www.pushingbox.com/index.php) Notification service API.
 
 ## Installation
 Simply install using pip as follows:
