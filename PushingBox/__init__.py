@@ -16,7 +16,7 @@ class PushingBox(object):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        self._enpoint=endpoint
+        self._endpoint=endpoint
 
     def push(self, device, **kwargs):
         """Push a notification to a device where 'device' is a DeviceID
