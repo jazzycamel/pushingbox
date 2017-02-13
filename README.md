@@ -30,6 +30,3 @@ then you can pass these variables as keyword arguments to the `push()` method as
 `>>> pbox.push('v0123456789ABCDE', room='kitchen', temperature='23')`
 
 Its as simple as that.
-
-## Compatability
-So far, this module has been tested with Python 3.5 on macOS Sierra (10.12.1). As this is an extemely simple pure python module, I see no reason why it won't work anywhere and everywhere, but if doesn't: let me know (preferably with a stack trace!).
