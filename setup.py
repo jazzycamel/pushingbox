@@ -6,10 +6,10 @@ def read(fname):
 
 setup(
     name="PushingBox",
-    version="0.1.0",
+    version="0.1.2",
     author="Rob Kent",
     author_email="jazzycamel@googlemail.com",
-    description=("A very simple Python client for the PushingBox Notification service API.",),
+    description="A very simple Python client for the PushingBox Notification service API.",
     license="MIT",
     keywords="PushingBox Notification API",
     url="https://github.com/jazzycamel/pushingbox",
