@@ -1,6 +1,8 @@
-from context import PushingBox
+import os
+import PushingBox
 
-if __name__=="__main__":
-    p=PushingBox.PushingBox()
-    devid=input("Enter a valid PushingBox DevID to test: ")
-    p.push(devid, room="Office", temperature="25.1")
+class TestClass:
+	def test_one(self):
+		p=PushingBox.PushingBox()
+		devid=os.environ['PB_TEST_DEV2']
+		assert p.push(devid, room="office", temperature="25.1")==True

@@ -1,10 +1,22 @@
-import logging
-from context import PushingBox
+import os
+import PushingBox
 
-FORMAT="%(name)s.%(module)s %(levelname)s: %(message)s"
-logging.basicConfig(format=FORMAT)
+class TestClass:
+	def test_one(self):
+		p=PushingBox.PushingBox()
+		devid=os.environ['PB_TEST_DEV1']
+		assert p.push(devid)==True
 
-if __name__=="__main__":
-    p=PushingBox.PushingBox()
-    devid=input("Enter a valid PushingBox DevID to test: ")
-    p.push(devid)
+	def test_two(self):
+		p=PushingBox.PushingBox()
+		devid="v0123456789ABCDE"
+		assert p.push(devid)==False
+
+	def test_three(self):
+		p=PushingBox.PushingBox()
+		assert p.endpoint=="http://api.pushingbox.com/pushingbox"
+
+	def test_four(self):
+		p=PushingBox.PushingBox()
+		p.endpoint="http://test.url/api"
+		assert p.endpoint=="http://test.url/api"
