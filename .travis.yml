@@ -11,7 +11,7 @@ before_install:
 install: 
     - pip install -r requirements.txt
     - pip install -e .
-script: py.test tests/ --cov
+script: py.test ./tests/test_*.py --cov
 env:
   global:
   - secure: NSKvQBVJIeX3UAvXpPVq09cWsANtA7ewkvKTk37XppTUVZQ8NtQVpAaev9kvU8uOZzSUmy5XCnmaViiHoZJARVRdRIiwcrWbTbM7ynh8ajWQP8x8WlMggCBYFRf6EHjhKljtzm772TtTO1Lncf5eiY1Ykbme5h4SjZNj7a80gU2S2E3dcZwmJ/ZhsmkemXBlASzY7ROPT5ThQkS+DrzNI/PQVXlYc4e/wSCXoo0quA+TmOPSVrTIIxLfZaxLaPiWNeMOlwxZKqeM3KzlSpAjiiUJYVR3YtDjX3TcALIjfTe93BgtKmexBjrZFz6kKlIOHwbmjLgmBWxEVG9zv7B8iSgBxZlmCXs31tuqpacuxrGh3OYA+736LxyOXjzeNF0VywBe8KNwZibJbDZ+HtQxrehUOlA+UlCd2BmrhCLg+kwnuiVgEPkkbHbcNErp5bw5em/EOvS38dSL8AaucSpJg/pLcP3jZkljIgYNOCWWA5T0bnFV8hoaF3sFQWgPzN5gNOcjR8JGop9fOyN59FjIH6sLscfywUMR5mLarBiiV3+C6YD5vck0rIaZqneJQR09yRj42Aq+qHr7d3q59IAWPJT+tMNOCtc/97PTsR1KjyddNO5rprZg2ZYGjs+ooiY7LN40MIf6v37mj84NVnq7FqtkBKvSxsvsbLKwGu597EY=

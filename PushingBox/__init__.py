@@ -40,12 +40,12 @@ class PushingBox(object):
             return True
 
         logging.getLogger(__name__).error(
-            "Failed to push notification: HTTP Status Code {}".format(
+            "Failed to push notification: HTTP Status Code {0}".format(
                 request.status_code))
 
         responseXML=ET.fromstring(request.text)
         if responseXML.tag.lower() in ('error',):
             logging.getLogger(__name__).error(
-                "Failed to push notification: {}".format(responseXML.text))
+                "Failed to push notification: {0}".format(responseXML.text))
         
         return False
