@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name="PushingBox",
-    version="0.1.2",
+    version="0.1.3",
     author="Rob Kent",
     author_email="jazzycamel@googlemail.com",
     description="A very simple Python client for the PushingBox Notification service API.",
@@ -19,6 +19,9 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.3",
         "Programming Language :: Python :: 3.4",
