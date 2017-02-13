@@ -1,4 +1,4 @@
-# pushingbox
+# pushingbox [![Build Status](https://travis-ci.org/jazzycamel/pushingbox.svg?branch=master)](https://travis-ci.org/jazzycamel/pushingbox)
 A very simple Python client for the [PushingBox](https://www.pushingbox.com/index.php) Notification service API.
 
 ## Installation
